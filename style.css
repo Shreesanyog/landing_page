@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color:rgb(239, 237, 237);
+    padding:1.5rem;
+   
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    margin-left: -10px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a{
+    padding: 14px 17px;
+    color: brown;
+    font-size: large;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: grey;
+    color: black;
+}
+.navbar a.active{
+    background-color: grey;
+    color: black;
+
+}
+.photo {
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+    margin-left: -10px;
+    
+    text-align: center;
+}
+.text{
+    position: absolute;
+    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(41, 41, 41, 0.8);
+    padding: 0.5rem 4rem;
+    text-align: center;
+    font-size: 16px;
+}
+.text h1{
+    color: red;
+}
+.text p{
+    color: white;
+}
+
+
+
+
+  
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    
+  }
+  
+ 
+  .row {margin: 0 -5px;}
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    
+  }
+  
+  .menu{
+    margin-top: -25px;
+    width: 104%;
+    margin-left: -10px;
+    background-color: rgb(240, 156, 156);
+   
+  }
+  .menu_options{
+    text-align: center;
+    padding-top: 1rem;
+    width: 100%;
+    margin-left: -10px;
+    
+  }
+
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
